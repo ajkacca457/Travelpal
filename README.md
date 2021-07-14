@@ -1,3 +1,3 @@
 # Travelpal
 
-It is an website for a hotel with all the traditional customization feature.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
