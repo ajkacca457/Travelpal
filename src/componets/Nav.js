@@ -29,14 +29,14 @@ const Navigation = () => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="m-auto" navbar>
             <NavItem>
-              <NavLink href="/components/"><i class="fas fa-home"></i><span className="px-2">Home</span> </NavLink>
+              <NavLink href="/components/"><i className="fas fa-home"></i><span className="px-2">Home</span> </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/"><i class="fas fa-door-open"></i> <span className="ml-2">Rooms</span></NavLink>
+              <NavLink href="/"><i className="fas fa-door-open"></i> <span className="ml-2">Rooms</span></NavLink>
             </NavItem>
 
             <NavItem>
-              <NavLink href="/"><i class="fas fa-concierge-bell"></i> <span className="ml-2">Services</span> </NavLink>
+              <NavLink href="/"><i className="fas fa-concierge-bell"></i> <span className="ml-2">Services</span> </NavLink>
             </NavItem>
           </Nav>
         </Collapse>

@@ -25,7 +25,7 @@ const items = [
   {
     src: Citem3,
     altText: 'TravelPal treats you the way you deserve.',
-    caption: 'TravelPal makes sure that all the guests are receiving the best care and top quality services.'
+    caption: 'TravelPal makes sure that all the guests are receiving the best care and top quality service.'
   }
 ];
 
