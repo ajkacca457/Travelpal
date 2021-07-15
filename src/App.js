@@ -5,12 +5,12 @@ import Services from './pages/Services';
 import Singleroom from './pages/Singleroom';
 import Singleservice from './pages/Singleservice';
 import Error from './pages/Error';
-import Nav from './componets/Nav';
+import Navigation from './componets/Nav';
 
 function App() {
   return (
     <div className="App">
-      <Nav></Nav>
+      <Navigation></Navigation>
       <Home></Home>
       <Rooms></Rooms>
       <Services></Services>

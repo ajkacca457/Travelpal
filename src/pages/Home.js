@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import "../App.css"
+import Display from '../componets/Homecarousel';
+
 
 const Home = () => {
     return (
-        <div>
-            
-            <h1>This is homepage</h1>
-
+        <div className="home">
+            <Display/>
         </div>
     )
 }

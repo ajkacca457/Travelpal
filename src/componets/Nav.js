@@ -1,11 +1,50 @@
-import React from 'react'
+import React, {useState} from 'react';
+import "../App.css";
+import {
+  Container,
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink
+} from 'reactstrap';
+import Logo from "../images/travelpallogo.png"
 
-const Nav = () => {
-    return (
-        <div>
-             <h1>Here is the common navigation</h1>  
-        </div>
-    )
+
+
+
+const Navigation = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
+
+  return (
+    <div>
+      <Navbar light expand="md" className="navbar bg-light" id="navbar">
+        <Container>        
+          <NavbarBrand href="/"><img src={Logo} alt="travelpal" style={{width:"100px",height:"50px"}}/></NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="m-auto" navbar>
+            <NavItem>
+              <NavLink href="/components/"><i class="fas fa-home"></i><span className="px-2">Home</span> </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/"><i class="fas fa-door-open"></i> <span className="ml-2">Rooms</span></NavLink>
+            </NavItem>
+
+            <NavItem>
+              <NavLink href="/"><i class="fas fa-concierge-bell"></i> <span className="ml-2">Services</span> </NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
+        </Container>
+
+      </Navbar>
+    </div>
+  );
 }
 
-    export default Nav
+    export default Navigation;
