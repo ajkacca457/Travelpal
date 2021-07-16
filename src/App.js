@@ -9,10 +9,12 @@ import Navigation from './componets/Nav';
 import Footer from './componets/Footer';
 import { Router} from "@reach/router";
 import RoomsContextProvider from './context/RoomsContext';
+import ServicesContextProvider from './context/ServicesContext';
 
 function App() {
   return (
     <div className="App">
+      <ServicesContextProvider>
       <RoomsContextProvider>
       <Navigation></Navigation>
       <Router>
@@ -24,6 +26,7 @@ function App() {
       <Error path="/error"/>
       </Router>
       </RoomsContextProvider>
+      </ServicesContextProvider>
 
       <Footer></Footer>
    

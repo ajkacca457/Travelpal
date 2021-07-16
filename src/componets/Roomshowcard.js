@@ -13,9 +13,9 @@ const Roomshowcard = ({rtitle,rsubtitle, rimg, ralt, rcountry}) => {
          <img width="100%" src={rimg} alt={ralt} />
          <CardBody>
           <CardTitle tag="h5">{rtitle}</CardTitle>
-          <CardSubtitle tag="h6" className="mb-2 text-muted">{rsubtitle}</CardSubtitle>
-          <CardSubtitle tag="h6" className="mb-2 text-muted">{rcountry}</CardSubtitle>
-          <Button>Show Room</Button>
+          <CardSubtitle tag="h6" className="my-2 text-muted">{rsubtitle}</CardSubtitle>
+          <CardSubtitle tag="h6" className="my-2 text-muted">{rcountry}</CardSubtitle>
+          <Button className="btn btn-danger">Show Room</Button>
         </CardBody>
       </Card>
         </div>

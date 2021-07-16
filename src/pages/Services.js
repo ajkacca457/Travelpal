@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Allservices from '../containers/Allservices';
 
 const Services = () => {
     return (
         <div>
-            <h1>Here are all the services</h1>
+            <Allservices/>
         </div>
     )
 }
