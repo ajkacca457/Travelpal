@@ -7,11 +7,13 @@ import Singleservice from './pages/Singleservice';
 import Error from './pages/Error';
 import Navigation from './componets/Nav';
 import Footer from './componets/Footer';
-import { Router} from "@reach/router"
+import { Router} from "@reach/router";
+import RoomsContextProvider from './context/RoomsContext';
 
 function App() {
   return (
     <div className="App">
+      <RoomsContextProvider>
       <Navigation></Navigation>
       <Router>
       <Home path="/" />
@@ -21,6 +23,7 @@ function App() {
       <Singleservice path="/services/serviceid" />
       <Error path="/error"/>
       </Router>
+      </RoomsContextProvider>
 
       <Footer></Footer>
    
