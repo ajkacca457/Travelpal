@@ -1,10 +1,33 @@
-import React from 'react'
+import React from 'react';
+import "../App.css"
+import { useContext } from 'react';
+import {RoomsContext} from "../context/RoomsContext";
+import {
+    Card, CardText, CardBody, CardLink,
+    CardTitle, CardSubtitle
+  } from 'reactstrap';
 
-const Singleroom = () => {
+const Singleroom = ({roomid}) => {
+
+    const {roominfo:{rooms}}=useContext(RoomsContext);
+
+    const room= rooms.filter((item)=> item.rid===roomid);
+
+    console.log(room);
+
     return (
-        <div>
-            <h1>All details about single rooms</h1>   
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus vel vitae molestiae facere sit beatae iure sapiente, laudantium distinctio unde maxime inventore nostrum consequatur eaque omnis. Id at tempora rem harum deleniti. Laboriosam laborum architecto ullam cupiditate quaerat ipsum delectus fugiat esse facilis ipsam molestiae ducimus eveniet nihil reiciendis assumenda dolorum blanditiis asperiores nobis quasi, veniam at molestias incidunt! Illum beatae unde sint fugit iure modi facilis sunt, aspernatur saepe libero porro voluptas, esse eveniet similique! Eligendi molestias quasi fugiat nemo et quam. Illum quidem tempora error eveniet qui, nobis vero beatae assumenda magni dolorem quam vitae, eaque ratione dolores consequuntur aut ad. Quos provident perferendis dignissimos aspernatur, nulla ullam quia esse omnis eveniet, cumque ipsam facere nisi sed in eos ducimus et eligendi accusantium delectus id? Provident architecto ut temporibus enim nostrum ea quas laudantium et iure sunt omnis explicabo, eligendi aut magnam vel rem consectetur ipsam soluta error odit facere in exercitationem distinctio. Sunt necessitatibus amet, minus debitis ratione quam aperiam, voluptate fuga velit consectetur enim consequatur aliquid at odio harum quod? Ullam nemo veniam reprehenderit doloribus est ea odio pariatur quod, magni at, accusantium dolor possimus totam numquam aut porro qui ratione incidunt? Neque molestiae odio esse!</p> 
+        <div className="singleroom">
+            <Card>
+        <CardBody>
+          <CardTitle tag="h5">{room[0].rtitle}</CardTitle>
+          <CardSubtitle tag="h6" className="mb-2 text-muted">{room[0].rsubtitle}</CardSubtitle>
+        </CardBody>
+        <img width="100%" src={room[0].rimg} alt="Card image cap" style={{height:"60vh"}}/>
+        <CardBody>
+          <CardText>{room[0].rinfo}</CardText>
+          <CardSubtitle tag="h5" className="mb-2 text-muted">{room[0].rcity}{" , "} {room[0].rcountry}</CardSubtitle> 
+        </CardBody>
+      </Card> 
         </div>
     )
 }
