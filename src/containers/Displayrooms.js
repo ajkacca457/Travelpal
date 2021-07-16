@@ -14,7 +14,7 @@ const Displayrooms = () => {
     console.log(hotrooms);
     const allrooms= hotrooms.map((item)=>{
         return (
-            <Roomcard key={item.id} rtitle={item.rtitle} rsubtitle={item.rsubtitle} rimg={item.rimg} ralt={item.ralt} rinfo={item.rinfo} />
+            <Roomcard key={item.rid} rtitle={item.rtitle} rsubtitle={item.rsubtitle} rimg={item.rimg} ralt={item.ralt} rinfo={item.rinfo} />
         )
     })
 

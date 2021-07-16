@@ -1,11 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Allrooms from '../containers/Allrooms';
 
 const Rooms = () => {
     return (
         <div>
-
-            <h1>Here will display all the rooms</h1>
-
+            <Allrooms/>
         </div>
     )
 }
