@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Link } from "@reach/router"
 import "../App.css";
 import {
   Container,
@@ -29,14 +30,14 @@ const Navigation = () => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="m-auto" navbar>
             <NavItem>
-              <NavLink href="/components/"><i className="fas fa-home"></i><span className="px-2">Home</span> </NavLink>
+            <Link to="/"><NavLink><i className="fas fa-home"></i><span className="px-2">Home</span> </NavLink></Link>
             </NavItem>
             <NavItem>
-              <NavLink href="/"><i className="fas fa-door-open"></i> <span className="ml-2">Rooms</span></NavLink>
+            <Link to="/rooms"><NavLink><i className="fas fa-door-open"></i> <span className="ml-2">Rooms</span></NavLink></Link>
             </NavItem>
 
             <NavItem>
-              <NavLink href="/"><i className="fas fa-concierge-bell"></i> <span className="ml-2">Services</span> </NavLink>
+            <Link to="/services"><NavLink><i className="fas fa-concierge-bell"></i> <span className="ml-2">Services</span> </NavLink></Link>
             </NavItem>
           </Nav>
         </Collapse>

@@ -7,17 +7,20 @@ import Singleservice from './pages/Singleservice';
 import Error from './pages/Error';
 import Navigation from './componets/Nav';
 import Footer from './componets/Footer';
+import { Router} from "@reach/router"
 
 function App() {
   return (
     <div className="App">
       <Navigation></Navigation>
-      <Home></Home>
-      <Rooms></Rooms>
-      <Services></Services>
-      <Singleroom></Singleroom>
-      <Singleservice></Singleservice>
-      <Error></Error>
+      <Router>
+      <Home path="/" />
+      <Rooms path="/rooms"/>
+      <Services path="/services"/>
+      <Singleroom path="/rooms/:roomid"/>
+      <Singleservice path="/services/serviceid" />
+      <Error path="/error"/>
+      </Router>
 
       <Footer></Footer>
    
