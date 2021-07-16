@@ -1,19 +1,23 @@
 import React from 'react';
-import College from "../images/travelpalcollection.png"
+import College from "../images/travelpalcollection.png";
+import Logo from "../images/travelpallogo.png";
+import { Button } from 'reactstrap';
 
 const About = () => {
     return (
         <div className="About">
             <div className="row" style={{width:"80%", margin:"2% auto"}}>
 
-                <div className="col-md-6 col-12">
+                <div className="col-md-6 col-12 text-center mb-3">
                 <img src={College} alt="travelpal" style={{width:"80%"}} />
                 </div>
 
-                <div className="col-md-6 col-12 d-flex flex-column justify-content-center">
-                    <h1>Hello world</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tempore doloremque obcaecati. Rem officia placeat quo dolorem voluptas, eius ut maxime molestiae qui alias vel nostrum sequi, ad minus ducimus nihil hic itaque voluptatem molestias dicta, quis incidunt minima vitae? Vel aliquid, dolorum doloribus obcaecati maxime error itaque pariatur fugiat.</p>
-
+                <div className="col-md-6 col-12 d-flex flex-column justify-content-center bg-secondary text-white p-2">
+                    <img src={Logo} alt="travelpal" style={{width:"100px", height:"50px", backgroundColor:"white", margin:"10px auto"}} />
+                    <h2 className="text-center">TravelPal</h2>
+                    <p className="w-75 mx-auto" style={{textAlign:"justify"}}>TravelPal is a company that aims to secure safe accommodation for travellers. TravelPal makes it easy for international travellers to find a place to live in. Using TravelPal travellers can find excellent rooms to live in with affordable pricing. TravelPal is extremely easy to use. Travellers can search the type of accommodation or service they are looking for. Pay some advance with debit or credit card and just like that the service will be confirmed.</p>
+                    <Button className="btn bg-dark w-50 mx-auto">Rooms</Button>
+                    <Button className="btn bg-dark mt-2 w-50 mx-auto">Services</Button>
                 </div>
 
             </div>

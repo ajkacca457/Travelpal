@@ -6,6 +6,7 @@ import Singleroom from './pages/Singleroom';
 import Singleservice from './pages/Singleservice';
 import Error from './pages/Error';
 import Navigation from './componets/Nav';
+import Footer from './componets/Footer';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
       <Singleroom></Singleroom>
       <Singleservice></Singleservice>
       <Error></Error>
+
+      <Footer></Footer>
    
     </div>
   );
