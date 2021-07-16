@@ -4,6 +4,7 @@ import Rooms from './pages/Rooms';
 import Services from './pages/Services';
 import Singleroom from './pages/Singleroom';
 import Singleservice from './pages/Singleservice';
+import Hotroom from './pages/Hotroom';
 import Error from './pages/Error';
 import Navigation from './componets/Nav';
 import Footer from './componets/Footer';
@@ -22,6 +23,7 @@ function App() {
       <Rooms path="/rooms"/>
       <Services path="/services"/>
       <Singleroom path="/rooms/:roomid"/>
+      <Hotroom path="/hotrooms/:hotroomid"/>
       <Singleservice path="/services/:serviceid" />
       <Error path="/error"/>
       </Router>
