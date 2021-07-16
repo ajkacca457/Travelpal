@@ -30,14 +30,14 @@ const Navigation = () => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="m-auto" navbar>
             <NavItem>
-            <Link to="/"><NavLink><i className="fas fa-home"></i><span className="px-2">Home</span> </NavLink></Link>
+            <Link to="/" style={{textDecoration:"none"}}><NavLink><i className="fas fa-home"></i><span className="px-2">Home</span> </NavLink></Link>
             </NavItem>
             <NavItem>
-            <Link to="/rooms"><NavLink><i className="fas fa-door-open"></i> <span className="ml-2">Rooms</span></NavLink></Link>
+            <Link to="/rooms" style={{textDecoration:"none"}}><NavLink><i className="fas fa-door-open"></i> <span className="ml-2">Rooms</span></NavLink></Link>
             </NavItem>
 
             <NavItem>
-            <Link to="/services"><NavLink><i className="fas fa-concierge-bell"></i> <span className="ml-2">Services</span> </NavLink></Link>
+            <Link to="/services" style={{textDecoration:"none"}}><NavLink><i className="fas fa-concierge-bell"></i> <span className="ml-2">Services</span> </NavLink></Link>
             </NavItem>
           </Nav>
         </Collapse>
