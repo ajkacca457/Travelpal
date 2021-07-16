@@ -10,7 +10,7 @@ const Allrooms = () => {
 
     const allrooms = rooms.map((item)=>{
         return(
-            <Roomshowcard key={item.rid} rtitle={item.rtitle} rsubtitle={item.rsubtitle} rimg={item.rimg} rcountry= {item.rcountry} />
+            <Roomshowcard key={item.rid} rid={item.rid} rtitle={item.rtitle} rsubtitle={item.rsubtitle} rimg={item.rimg} rcountry= {item.rcountry} />
         )
     })
     

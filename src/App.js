@@ -22,7 +22,7 @@ function App() {
       <Rooms path="/rooms"/>
       <Services path="/services"/>
       <Singleroom path="/rooms/:roomid"/>
-      <Singleservice path="/services/serviceid" />
+      <Singleservice path="/services/:serviceid" />
       <Error path="/error"/>
       </Router>
       </RoomsContextProvider>
