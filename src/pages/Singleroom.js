@@ -1,5 +1,5 @@
 import React from 'react';
-import "../App.css"
+import "../App.css";
 import { useContext } from 'react';
 import {RoomsContext} from "../context/RoomsContext";
 import {

@@ -1,10 +1,37 @@
-import React from 'react'
+import React from 'react';
+import { ServiceContext } from '../context/ServicesContext';
+import { useContext } from 'react';
+import "../App.css";
+import {
+    Card, CardText, CardBody, CardLink,
+    CardTitle, CardSubtitle
+  } from 'reactstrap';
 
-const Singleservice = () => {
+
+
+const Singleservice = ({serviceid}) => {
+
+    const {services:{services}}=useContext(ServiceContext);
+
+    const service= services.filter((item)=>item.id===serviceid);
+
+    console.log(service);
+
+
+
     return (
-        <div>
-        <h1>All details about single service</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, hic autem fugit earum beatae sunt temporibus architecto, amet eveniet ea facilis itaque non ducimus, aspernatur nam alias quo sequi dolor laboriosam consectetur aperiam blanditiis! Nam quas consequatur ex nisi error minima recusandae quae rerum necessitatibus labore possimus fuga, numquam iste laborum saepe animi temporibus quaerat maxime repudiandae corrupti! Dolorum magni repellat, numquam quos aspernatur minus nobis non eveniet facere cupiditate ratione voluptates hic expedita harum quo. Voluptas quasi maiores eum exercitationem fugit numquam temporibus ipsum repellat enim, iure eaque nisi dolores? Harum quisquam quibusdam, alias commodi veniam tempore adipisci excepturi!</p>
+        <div className="singleroom">
+        <Card>
+        <CardBody>
+          <CardTitle tag="h5">{service[0].title}</CardTitle>
+          <CardSubtitle tag="h6" className="mb-2 text-muted">{service[0].subtext}</CardSubtitle>
+        </CardBody>
+        <img width="100%" src={service[0].image} alt="service info" style={{height:"60vh"}}/>
+        <CardBody>
+          <CardText>{service[0].info}</CardText>
+          <h5 className="bg-warning w-50 text-center p-2">{service[0].price}</h5> 
+        </CardBody>
+      </Card> 
         </div>
     )
 }
