@@ -4,6 +4,9 @@ This is a react project that uses context api and useReducer hook for state mana
 
 <img src="./src/images/readme1.jpg">
 <img src="./src/images/readme2.jpg">
+<img src="./src/images/readme3.jpg">
+<img src="./src/images/readme4.jpg">
+<img src="./src/images/readme5.jpg">
 
 </h1>Additional description about the project and its features.</h1>
 
