@@ -15,9 +15,6 @@ const Singleservice = ({serviceid}) => {
 
     const service= services.filter((item)=>item.id===serviceid);
 
-    console.log(service);
-
-
 
     return (
         <div className="singleroom">
