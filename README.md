@@ -2,8 +2,7 @@
 
 This is a react project that uses context api and useReducer hook for state management. The main aim of this project was to create a app that users can use to find affordable hotel rooms and services. Currently it is just a front-end app that uses locally stored data to render the content. This app is using modern react tools like context api,useReducer and useContext to manage all the data. Right now user can see list of available rooms in different cities. User can also find out different types of available services that they can use. User can search the rooms and services with custom search and filtering. In future the main aim is to create a backend functionality for this app so that it can be used for commercial purpose. This app will go through continuous development and the approximate timeline for this app to be fully functional is by the end of this year.
 
-<img src="./src/images/demo1.jpg">
-<img src="./src/images/interface2.PNG">
+<img src="./src/images/readme1.jpg">
 
 </h1>Additional description about the project and its features.</h1>
 
